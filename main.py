@@ -18,8 +18,8 @@ def scanthesite():
     with open('test.json', 'w') as file:
         json.dump(output, file)
     final3 = json.dumps(final, indent=2)
-
     print(final3)
+    return final3
 if __name__ == "__main__":
     crawciscan.run(debug=True)
 
