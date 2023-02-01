@@ -84,13 +84,3 @@ class Scanner:
         response = self.submit_form(form, xss_test_script, url)
         return xss_test_script.encode() in response.content
 
-#target_url = "http://testphp.vulnweb.com/"
-#links_to_ignore = ["http://192.168.44.101/dvwa/logout.php"]
-#links_to_ignore=[""]
-#data_dict = {"username":"admin","password":"password","Login":"submit"}
-
-#vuln_scanner = Scanner(target_url,links_to_ignore)
-#vuln_scanner.session.post("http://192.168.44.101/dvwa/login.php",data=data_dict)
-
-#vuln_scanner.crawl()
-#vuln_scanner.run_scanner()
